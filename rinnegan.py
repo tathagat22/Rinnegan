@@ -28,10 +28,10 @@ class TransferData:
 			dbx.files_upload(f.read(), file_to)
 
 def main():
-	access_token = 'SlUAcP50s0sAAAAAAAAAARIvZbiwzSeByMcQXJjafqD6conVbX-G_MOnpegUi9_g'
+	access_token = 'your_access_token_here'
 	transferData = TransferData(access_token)
-	file_from = '/root/rinnegan/ignore/legion.conf'
-	file_to = '/test_dropbox/ignorecloud'
+	file_from = 'file_location_in_computer'
+	file_to = 'save_location_in_dropbox'
 	transferData.upload_file(file_from, file_to)
 
 if __name__ == '__main__':
